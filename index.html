@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>TIP <br>CALCULATOR</h1>
+      <div class="card">
+        <div class="left">
+          <p>Bill</p>
+          <input id="icon-dollar" type="number" placeholder="0.00"/>
+          <p>Select Tip %</p>
+          <select id="percentage">
+            <option value="custom">Custom</option>
+            <option value="5%">5%</option>
+            <option value="10%">10%</option>
+            <option value="15%">15%</option>
+            <option value="25%">25%</option>
+            <option value="50%">50%</option>
+            <input type="number" placeholder="Custom" id="custom"></button>
+          </select>
+          
+          <p>Number of People</p>
+          <input id="icon-people" type="number" placeholder="0.00" id="people"/>
+        </div>
+
+        <div class="right">
+          <div class="total-card">
+            <div class="tip">
+              <p>Tip Amount</p>
+              <p id="demo"></p>
+              <span>/person</span>
+            </div>
+            <div class="total">
+              <button onclick="myFunction()">CALCULATE</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

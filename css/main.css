@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Mono", sans-serif;
+}
+
+body {
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+#icon-dollar {
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#icon-people {
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+main h1 {
+  color: hsl(183deg, 100%, 15%);
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+main .card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+main .card p {
+  color: hsl(184deg, 14%, 56%);
+  margin: 5px 0 5px 0;
+}
+main .card #icon-dollar {
+  padding: 10px 80px 10px 80px;
+  margin: 0 0 0 5px;
+}
+main .card #icon-people {
+  padding: 10px 80px 10px 80px;
+  margin: 0 0 0 5px;
+}
+main #percentage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  margin-left: 5px;
+}
+main #percentage option {
+  background-color: hsl(183deg, 100%, 15%);
+  text-align: center;
+  margin: 0.5rem;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+}
+main #percentage .box:active {
+  background-color: hsl(172deg, 67%, 45%);
+}
+main #custom {
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-color: hsl(189deg, 41%, 97%);
+  border-color: hsl(189deg, 41%, 97%);
+  font-size: 18px;
+  color: hsl(186deg, 14%, 43%);
+  text-align: center;
+}
+main .total-card {
+  background-color: hsl(183deg, 100%, 15%);
+  margin: 20px 0 0 0;
+  border-radius: 15px;
+}
+main .total-card p {
+  margin: 1rem;
+  color: white;
+}
+main .total-card span {
+  margin: 1rem;
+}
+main .total-card button {
+  margin: 30px 25px 10px 25px;
+  padding: 10px 133px 10px 133px;
+  background-color: hsl(172deg, 67%, 45%);
+  border: none;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20rem;
+  }
+  .left .percentage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .right .total-card {
+    height: 52vh;
+  }
+  .right .total-card .total {
+    margin-bottom: 150px;
+  }
+  .right .total-card .reset {
+    margin-left: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
